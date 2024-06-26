@@ -15,9 +15,10 @@ export const contactForm = async (req, res) => {
     const contact = await contactModel.create(req.body);
     res.status(200).json({
       success: true,
-      message: "form submit successfully",
+      message: "Form submitted successfully",
       contact,
     });
+
     sendEmail({
       firstName: contact.firstName,
       lastName: contact.lastName,

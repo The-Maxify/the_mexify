@@ -1,0 +1,116 @@
+.career-box {
+  height: 100%;
+  padding: 30px;
+  box-shadow: 0 0px 3px gainsboro;
+  border: 1px solid gainsboro;
+  transition: all 0.5s linear;
+}
+
+.career-box:hover {
+  box-shadow: 0 0px 40px 0 rgba(0, 0, 0, 0.11);
+  transform: translateY(-10px);
+}
+
+.career-box p {
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.career-box h5 {
+  color: rgb(27, 27, 27);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.career-box img {
+  width: 52px;
+  margin-bottom: 7px;
+}
+.career-box .icon{
+  color: #525ceb;
+  height: 52px;
+  width: 52px;
+  margin-bottom: 7px;
+}
+
+/* job section */
+.job-section .wrapper {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-section .accordion {
+  /* width: 500px; */
+}
+
+.job-section .item {
+  background-color: white;
+  /* background-color: cadetblue; */
+  margin-bottom: 5px;
+  /* padding: 10px 20px; */
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.job-section .title {
+  color: #85662b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.job-section .title h2 {
+  color: #3d3b40;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.job-section .title span {
+  color: #3d3b40;
+  font-size: 33px;
+}
+
+.job-section .content {
+  color: #3d3b40;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0, 1, 0, 1);
+}
+
+.job-section .content.show {
+  height: auto;
+  max-height: 999px;
+  transition: all 0.5s linear;
+  line-height: 1.5;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.job-section .accordion {
+  width: 90%;
+}
+
+.job-section .content.show ul li {
+  width: 69%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 6px;
+}
+
+.job-section .content.show ul li div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-section .content.show ul li div .skills {
+  background: #525ceb;
+  padding: 5px 12px;
+  color: white;
+  margin-right: 8px;
+  margin-bottom: 7px;
+}

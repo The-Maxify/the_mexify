@@ -1,0 +1,139 @@
+.single-industries-box {
+  position: relative;
+  /* z-index: -1; */
+}
+
+.single-industries-box::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 99%;
+  bottom: 0;
+  content: "";
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  transition: all 0.5s linear;
+}
+
+.single-industries-box .img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.single-industries-box img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.single-industries-box .content {
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  width: 51%;
+  color: white;
+  z-index: 111;
+}
+
+.single-industries-box .content h4 {
+  font-size: 25px;
+}
+
+.single-industries-box .content p {
+  color: white;
+  margin-top: 8px;
+}
+
+.single-industries-box .content button {
+  font-size: 52px;
+  transition: all 0.5s linear;
+}
+
+button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.single-industries-box:hover .img img {
+  /* transform: scale(1.2); */
+}
+
+.single-industries-box:hover::before {
+  right: 0 !important;
+}
+
+.single-industries-box:hover .content button {
+  margin-left: 50px;
+}
+
+.industries-details-box {
+  background-color: transparent;
+  color: white;
+  /* border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px; */
+  padding: 35px 30px;
+}
+
+.industries-details-box h5,
+.industries-details-box p {
+  color: white;
+}
+
+.industries-details-box h5::before {
+  background-color: #525ceb;
+}
+
+.industries-details-box:hover {
+  background-color: #525ceb;
+}
+
+.industries-details-box:hover p,
+.industries-details-box:hover h5,
+.industries-details-box:hover h5::before {
+  color: white;
+}
+.banner {
+  top: 0;
+  position: absolute;
+  /* max-height: 100%; */
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 550px) {
+  .banner {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .single-industries-box::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+   -webkit-backdrop-filter: blur(10px);
+    background: rgb(0, 0, 0);
+    opacity: 0.7;
+  }
+  .single-industries-box img {
+    filter: blur(3px);
+  }
+}
+.element-banner {
+  background-position: 50%;
+  background-size: cover;
+  object-fit: scale-down;
+  /* padding: 240px 0; */
+  /* padding: 170px 0; */
+  position: relative;
+  z-index: 1;
+}
+.industry-box {
+  background: #3d3b40;
+  z-index: 1;
+}

@@ -1,0 +1,158 @@
+.about-company-banner {
+  /* background-image: url("../../assets/about\ us\ banner.png"); */
+  background-image: url("https://res.cloudinary.com/djkkjx9ry/image/upload/v1718792896/MaxifyAssits/aboutusbanner_jy6avv_iz2ayu.webp");
+}
+
+.img-box.about-company-img {
+  height: 72%;
+  width: 100%;
+}
+
+.img-box.about-company-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-ethos-ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.heading-h4 {
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.our-ethos-ul .number {
+  width: 67px;
+  height: 67px;
+  background: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+  font-size: 35px;
+}
+
+.our-ethos-ul .content {
+  color: #1a1a1a;
+  text-align: left;
+    width: 100%;
+}
+
+.black-section {
+  background-color: #1a1a1a;
+  padding: 50px 0;
+}
+
+.white-color {
+  color: white;
+}
+
+.our-essence-box {
+  padding: 30px;
+  color: white;
+  height: 100%;
+  background-color: #414141;
+  transition:  0.5s linear;
+}
+
+.our-essence-box h5 {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.our-essence-box h5::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+  content: "";
+  background: #414141;
+  left: -9px;
+  transition: all 0.5s linear;
+}
+
+.our-essence-box:hover {
+  background-color: #525ceb;
+  box-shadow: 0 20px 50px #0000000d;
+}
+
+.our-essence-box:hover h5::before {
+  background-color: gainsboro;
+}
+
+.news-event-name {
+  margin-bottom: 15px;
+}
+
+.news-event-name span {
+  font-size: 9px;
+  background: gainsboro;
+  padding: 6px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+
+.img-box.about-leadership-main {
+  /* width: 100%; */
+  /* height: 21rem; */
+}
+
+.img-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.leadership-box {
+  border: 1px solid gainsboro;
+}
+
+.leadership-box .profiles-img {
+  width: 100%;
+  /* height: 21rem; */
+}
+
+.leadership-box .content {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leadership-box .content img {
+  width: 24px;
+}
+
+.leadership-box .content .leader-loaction {
+  display: flex;
+  margin: 11px 0;
+}
+
+.leadership-box .content .leader-loaction a {
+  margin-left: 10px;
+}
+
+.left-line {
+  position: relative;
+  margin-left: 15px;
+}
+
+.left-line::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 32px;
+  top: 5px;
+  left: -15px;
+  background-color: #525ceb;
+}
+
+.leadership-box:hover {
+  box-shadow: 0 20px 50px #0000000d;
+}

@@ -15,10 +15,10 @@ const Welcome = () => {
           <div className="grid grid-cols-12  gap-[5%]">
             <div className="lg:col-span-6 sm:col-span-12">
               <div className="element-container">
-              <Fade direction="down" duration={1000} triggerOnce>
-                <h6 className="text mb-2">WELCOME TO MAXIFY</h6>
-                <div className="welcome"></div>
-                <h2 className="heading-h3 text">
+              <Fade direction="top" duration={1000} triggerOnce>
+                <h6 className="text mb-2 sm:text-center lg:text-left">WELCOME TO MAXIFY</h6>
+                <div className="welcome sm:relative sm:left-1/2 sm:transform sm:-translate-x-1/2 lg:left-0 lg:translate-x-0"></div>
+                <h2 className="heading-h3 text sm:text-center lg:text-left">
                   Simplifying, Strengthening Business Worldwide
                 </h2>
                 </Fade>
@@ -44,7 +44,7 @@ const Welcome = () => {
                   growth. Let us help you maximize your potential and reach new
                   heights.
                 </p>
-                <p className="sm:block md:hidden text-[#595959] text-[1rem]   mt-6 text-justify">
+                <p className="sm:block md:hidden text-[#595959] text-[1rem] leading-[1.44rem]  mt-2 text-justify">
                 {/* <p className="text-[#595959] sm:text-[1rem] lg:text-[1rem] xl:text-[1.5rem]  mt-6 "> */}
                   Maxify is the right platform for all your development and
                   marketing needs. We provide our expertise in

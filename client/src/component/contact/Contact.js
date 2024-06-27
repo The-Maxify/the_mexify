@@ -14,10 +14,10 @@ const Contact = () => {
 
   const handleInputChange = async (e) => {
     const { name, value } = e.target;
-     setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [name]: value });
   };
   const handleSubmit = async (e) => {
-     e.preventDefault();
+    e.preventDefault();
     // Form validation logic
 
     const newErrors = {};
@@ -41,7 +41,7 @@ const Contact = () => {
     }
 
     try {
-      const data = await axios.post("http://localhost:500/contact", formData);
+      const data = await axios.post("http://localhost:3000/contact", formData);
       console.log("Form submitted:", data);
     } catch (error) {}
   };

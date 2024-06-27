@@ -150,7 +150,7 @@
 
 .element-banner.service-banner {
   background-image: url("https://res.cloudinary.com/djkkjx9ry/image/upload/v1718776735/MaxifyAssits/service_web_ydimck_fppm4j.webp");
-  /* height: 250px; */
+  /* height: 300px; */
 }
 
 .industry-banner {
@@ -258,4 +258,18 @@
 }
 .sevices-text {
   font-weight: lighter;
+}
+@media (max-width:450px) {
+  .element-banner.service-banner {
+    background-image: url("https://res.cloudinary.com/djkkjx9ry/image/upload/v1718776735/MaxifyAssits/service_web_ydimck_fppm4j.webp");
+    height: 300px;
+  }
+  .industry-banner {
+    background-image: url("https://res.cloudinary.com/djkkjx9ry/image/upload/v1718776676/MaxifyAssits/industries_mxl5zg_h2hytr.webp");
+    height: 300px;
+  }
+  .success-banner {
+    background-image: url("https://res.cloudinary.com/djkkjx9ry/image/upload/v1718776739/MaxifyAssits/success_story_banner_kgwtpj_qffgpn.webp");
+    height: 300px;
+  }
 }

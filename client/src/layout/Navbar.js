@@ -211,7 +211,7 @@ const Navbar = () => {
             </ul>
             <ul
               className={`
-              lg:hidden bg-[#3d3b40] gap- fixed w-full top-0 overflow-y-auto bottom-0 py-10 px-10 mt-[60px]
+              lg:hidden bg-[#3d3b40] gap- fixed w-full top-0 overflow-y-auto bottom-0 py-10 px-10 sm:mt-[60px] md:mt-[80px]
                     duration-500 ${click ? "right-0 z-50 " : "right-[-100%]"}`}
             >
               {NaveData.map((item, i) => (

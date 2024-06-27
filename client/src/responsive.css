@@ -308,9 +308,9 @@
   }
   .home-slider-container .home-slider-content p {
     color: #fff;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 500;
-    margin: -4px 0;
+    margin: 4px 0;
     letter-spacing: 0.5px;
   }
   .heading-h3 {
@@ -359,7 +359,7 @@
     z-index: 5;
   }
   .heading-h3 {
-    margin-top: 50px;
+    margin-top: 15px;
     font-size: 19px;
     font-weight: 600;
     line-height: 35px;

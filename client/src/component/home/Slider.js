@@ -43,7 +43,7 @@ export default function Slider() {
             <div className="home-slider-container">
               <div className="home-slider-img1">
                 {showVideo && isVideoLoaded ? (
-                  <video autoPlay muted loop>
+                  <video autoPlay muted loop className="sm:max-w-[250%] md:max-w-[100%]">
                     <source
                       className="brightness-50"
                       src={homeVideo}
@@ -57,11 +57,10 @@ export default function Slider() {
               </div>
               <div className="home-slider-content sm:mt-14">
                 <h1 className="heading-h1"> We are Maxify</h1>
-                <p className="para sm:hidden md:block ">
+                <p className="para">
                   We provide cutting-edge digital services to elevate your
                   business.
                 </p>
-                \
               </div>
             </div>
           </SwiperSlide>

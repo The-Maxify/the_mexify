@@ -13,7 +13,7 @@ const AboutCompany = () => {
       <MetaData titles={`Maxify Abouts Us`} />
       <div>
       {/* banner */}
-      <div className="element-banner lg:pt-[15%] lg:pb-[15%] sm:pt-[30%] sm:pb-[18%] about-company-banner">
+      <div className="element-banner lg:pt-[15%] lg:pb-[15%] sm:pt-[36%] sm:pb-[25%] about-company-banner">
         <div className="container-section">
           <div className="element-banner-content">
             <h1 className="text-heading- sm:text-[24px] font-[700] sm:leading-[32px] lg:leading-[50px] lg:text-[35px]">

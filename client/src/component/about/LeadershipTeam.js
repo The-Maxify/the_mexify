@@ -11,7 +11,7 @@ const LeadershipTeam = () => {
     <>
       <MetaData titles={`Maxify Industries Leadership Team`} />
       {/* banner */}
-      <div className="element-banner lg:pt-[15%] lg:pb-[15%] sm:pt-[30%] sm:pb-[18%]  about-company-banner">
+      <div className="element-banner lg:pt-[15%] lg:pb-[15%] sm:pt-[28%] sm:pb-[18%]  about-company-banner">
         <img className="banner" src="https://res.cloudinary.com/djkkjx9ry/image/upload/v1718776689/MaxifyAssits/leadership_banner_fgnkqi_vfl0fm.webp" alt="jpg" />
         <div className="container-section ">
           <div className="element-banner-content lg:w-[60%]">
@@ -57,7 +57,7 @@ const LeadershipTeam = () => {
         </div>
       </div>
 
-      {/* <div className="container-section-2 mat-0 sm:mt-20">
+      <div className="container-section-2 mat-0 sm:mt-20">
         <Fade direction="down"><h4 className="text-heading-h4 left-line sm:mt-10 lg:mt-0">Management Team</h4></Fade>
         <div className="flex flex-wrap gap-4 justify-center mat-50">
           <div className="w-[400px]">
@@ -99,7 +99,7 @@ const LeadershipTeam = () => {
         
         
         </div>
-      </div> */}
+      </div>
       {/* <div className="container-section-2 mat-100">
         <Fade direction="down"><h4 className="text-heading-h4 left-line">Developer Team</h4></Fade>
         <div className="grid grid-cols-12  gap-4 mat-50">

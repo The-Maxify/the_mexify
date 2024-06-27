@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import thumb from "../assets/vecteezy_thumb-up-like-icon-emoji-sticker_27386542.png"
 import { RiCloseCircleFill } from "react-icons/ri";
 import { RiFacebookBoxFill } from "react-icons/ri";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -17,7 +16,7 @@ const ThankYouPage = ({showPopup, setShowPopup}) => {
       <div className="content bg-white">
         <div className="wrapper-1  sm:w-[90%] sm:mx-auto sm:h-auto">
        <div className="flex justify-center ">
-        <img className="w-14 h-14 bg-white p-1 " src={thumb} alt="thumb" />
+        <img className="w-14 h-14 bg-white p-1 " src="https://res.cloudinary.com/djkkjx9ry/image/upload/v1719495297/MaxifyAssits/vecteezy_thumb-up-like-icon-emoji-sticker_27386542_rhyjqn.png" alt="thumb" />
        </div>
           <div className="wrapper-2 ">
             <h1 className="heading-1 lg:text-[4rem] sm:text-[2rem]">Thank you !</h1>

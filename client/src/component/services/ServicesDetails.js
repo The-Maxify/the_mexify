@@ -32,11 +32,11 @@ const ServicesDetails = ({
     <>
       <MetaData titles={`Maxify Industries ${name}`} />
       <div className="relative">
-        <div className="element-banner lg:pt-[17%] lg:pb-[15%] md:pt-[25%] md:pb-[10%] sm:pt-[30%] sm:pb-[18%] ">
+        <div className="element-banner lg:pt-[17%] lg:pb-[15%] md:pt-[25%] md:pb-[10%] sm:pt-[40%] sm:pb-[28%] ">
           <img className="banner" src={img} alt="jpg" />
           <div className="container-section">
             <div className="element-banner-content sm:w-full md:w-[70%]">
-            <h1 className="heading-  sm:text-[24px] font-[600] md:text-[35px] sm:leading-[32px] lg:leading-[50px] lg:text-[40px] text-white">
+            <h1 className="heading-  sm:text-[20px] font-[600] md:text-[35px] sm:leading-[32px] lg:leading-[50px] lg:text-[40px] text-white">
                 {title2}{" "}
               </h1>
               <p className="para sm:hidden md:block">{text}</p>

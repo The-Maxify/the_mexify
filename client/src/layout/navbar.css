@@ -464,6 +464,15 @@ a:focus {
     width: 130px !important;
     height: 130px;
   }
+  .navbar {
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  }
+  .navbar-main-box {
+    box-shadow: none;
+    min-height: 8.5vh;
+    padding: 8px 10px;
+  }
 }
 
 @media screen and (max-width: 480px) and (min-width: 350px) {

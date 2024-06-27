@@ -15,10 +15,10 @@ const __dirname = path.dirname(__fileName);
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, "./build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./build/index.html")); // Corrected here
+  res.sendFile(path.join(__dirname, "./client/build/index.html")); // Corrected here
 });
 
 

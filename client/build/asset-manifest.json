@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.17cb7d1a.css",
+    "main.js": "/static/js/main.582b77e1.js",
+    "static/media/bg-brc-service.jpg": "/static/media/bg-brc-service.c0c671d0e03eede1c02e.jpg",
+    "static/media/overlay-shape.png": "/static/media/overlay-shape.68aa9431fe9510a4f551.png",
+    "static/media/welcome-img.jpg": "/static/media/welcome-img.11e52bc39442715d5b92.jpg",
+    "static/media/slider1.jpg": "/static/media/slider1.26498acdf0d9c443a286.jpg",
+    "static/media/experience.jpg": "/static/media/experience.deff92d907b8c3e82fb0.jpg",
+    "static/media/img1.jpg": "/static/media/img1.79236c74bbc81afcc013.jpg",
+    "static/media/dots1.png": "/static/media/dots1.33d56b6c47eca894ac2d.png",
+    "static/media/news-1.jpg": "/static/media/news-1.5ef3f9dfcf73b71db076.jpg",
+    "static/media/our-mission.jpg": "/static/media/our-mission.5a47a7359fafd3463974.jpg",
+    "index.html": "/index.html",
+    "main.17cb7d1a.css.map": "/static/css/main.17cb7d1a.css.map",
+    "main.582b77e1.js.map": "/static/js/main.582b77e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17cb7d1a.css",
+    "static/js/main.582b77e1.js"
+  ]
+}

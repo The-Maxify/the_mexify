@@ -50,16 +50,7 @@ const Welcome = () => {
                   marketing needs. We provide our expertise in
                   eCommerce, digital marketing, web and app development
                   services. We help our customers create websites and
-                  applications that are feature-rich. We approach unique and
-                  customized strategies that attract customers and helps grow
-                  your business. Keeping customer as the foremost priority, we
-                  empower your business with the best crafted solutions to get
-                  the desired results and excel in the market. Our team of
-                  experienced professionals is dedicated to delivering
-                  high-quality services that drive success. By leveraging the
-                  latest technologies and industry trends. Partner with Maxify
-                  to transform your vision into reality and achieve sustainable
-                  growth. Let us help you maximize your potential and reach new
+                  applications that are feature-rich. Let us help you maximize your potential and reach new
                   heights.
                 </p>
                 </Fade>

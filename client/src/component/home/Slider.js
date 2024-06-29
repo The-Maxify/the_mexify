@@ -27,7 +27,7 @@ export default function Slider() {
       // Set the video to show after 2 seconds of loading
       setTimeout(() => {
         setShowVideo(true);
-      }, 2000);
+      },);
     };
     // Clean up the video element
     return () => {

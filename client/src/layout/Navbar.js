@@ -6,20 +6,16 @@ import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { NaveData } from "./NavData";
 import "./navbar.css";
-import {  Bounce } from "react-awesome-reveal";
+import { Bounce } from "react-awesome-reveal";
+
 const Navbar = () => {
   const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
-
-  // const [open, setOpen] = useState(false);
-  // const handleClickOpen = (i) => {
-  //   if (open === i) {
-  //     return setOpen(true);
-  //   }
-  //   setOpen(i);
-  // };
-  // console.log("object", auth)
   const [selected, setSelected] = useState(null);
+  const [click, setClick] = useState(false);
+  const [subActive, setSubActive] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
+
   const toggle = (i) => {
     if (selected === i) {
       return setSelected(null);
@@ -27,20 +23,21 @@ const Navbar = () => {
     setSelected(i);
   };
 
-  const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click);
+    if (click) {
+      setSubActive(null);
+      setSelected(null);
+    }
+  };
 
-  const handleClick = () => setClick(!click);
-  // sub menu
-  const [subActive, setSubActive] = useState(null);
   const handleSubActive = (i) => {
     if (subActive === i) {
       return setSubActive(null);
     }
     setSubActive(i);
-    console.log("object", i);
   };
 
-  //close submenu
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 100) {
@@ -52,33 +49,10 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  });
-
-  let x = ["navbar"];
-  if (scrolled) {
-    x.push("scrolled");
-  }
-
-  //********** */ mobile menu **********
-  const handleScrollMobile = () => {
-    const offset = window.scrollY;
-    if (offset > 100) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScrollMobile);
-  });
-
-  let xm = ["navbar-mobile"];
-  if (scrolled) {
-    xm.push("scrolled");
-  }
-
-  const [isHovered, setIsHovered] = useState(false);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleMouseLeave = () => {
     setIsHovered(true);
@@ -87,17 +61,24 @@ const Navbar = () => {
     }, 2000);
   };
 
+  let x = ["navbar"];
+  if (scrolled) {
+    x.push("scrolled");
+  }
+
   return (
     <>
-    
-      {/* */}
       <header className={x.join(" ")}>
-        <div className={` lg:hover:bg-[#3d3b40] ${click? "sm:bg-[#3d3b40]":""}  navbar-main-box`}>
-          <Bounce duration={1000} >
-          <div className="logo" onClick={() => navigate("/")}>
-            <img loading="lazy" src="https://res.cloudinary.com/djkkjx9ry/image/upload/v1718776690/MaxifyAssits/logo_zxu5hn_qgjini.webp" alt="" />
-          </div>
-           </Bounce>
+        <div className={`navbar-main-box lg:hover:bg-[#3d3b40] ${click ? "sm:bg-[#3d3b40]" : ""}`}>
+          <Bounce duration={1000}>
+            <div className="logo" onClick={() => navigate("/")}>
+              <img
+                loading="lazy"
+                src="https://res.cloudinary.com/djkkjx9ry/image/upload/v1718776690/MaxifyAssits/logo_zxu5hn_qgjini.webp"
+                alt=""
+              />
+            </div>
+          </Bounce>
           <nav className="navigation">
             <ul className="lg:flex hidden font-[500] text-[1rem] items-center gap-8 leading-5 navmanu">
               {NaveData.map((item, i) => (
@@ -178,7 +159,6 @@ const Navbar = () => {
                   )}
                   {item.submenu && (
                     <>
-                      {" "}
                       <ul
                         id={isHovered ? "show-drop" : "not-show-drop"}
                         className={
@@ -210,9 +190,9 @@ const Navbar = () => {
               </button>
             </ul>
             <ul
-              className={`
-              lg:hidden bg-[#3d3b40] gap- fixed w-full top-0 overflow-y-auto bottom-0 py-10 px-10 sm:mt-[60px] md:mt-[80px]
-                    duration-500 ${click ? "right-0 z-50 " : "right-[-100%]"}`}
+              className={`lg:hidden bg-[#3d3b40] fixed w-full top-0 overflow-y-auto bottom-0 py-10 px-10 sm:mt-[55px] md:mt-[80px] duration-500 ${
+                click ? "right-0 z-50" : "right-[-100%]"
+              }`}
             >
               {NaveData.map((item, i) => (
                 <li
@@ -260,7 +240,6 @@ const Navbar = () => {
                                     onClick={() => {
                                       navigate(item.url);
                                       handleMouseLeave();
-                                      
                                     }}
                                   >
                                     {data?.dText?.b}
@@ -294,7 +273,6 @@ const Navbar = () => {
                   )}
                   {item.submenu && (
                     <>
-                      {" "}
                       <ul
                         id={isHovered ? "show-drop" : "not-show-drop"}
                         className={
@@ -337,4 +315,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;

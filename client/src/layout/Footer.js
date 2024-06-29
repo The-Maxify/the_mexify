@@ -74,7 +74,7 @@ const Footer = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/contact",
+        "http://localhost:500/contact",
         formData,
         {
           headers: {
@@ -118,29 +118,23 @@ const Footer = () => {
                 </div>
               </div>
               <div className="contenct mt-14">
-                <h5 className="text-lg font-[600]">Company Address</h5>
+                <h5 className="text-lg font-[600] text-center">Company Address</h5>
                 <div className="mt-5 ml-5">
-                  <ul className="text-base text-gray-600">
+                  <ul className="text-[0.9rem] leading-6 text-gray-600">
                     <li>
-                      <strong>Maxify web solution pvt. ltd</strong>
+                      <strong className="text-center">Maxify web solution pvt. ltd</strong>
                       <br />
                       The Viste Centre
                       <br />
                       Office No - F-02
                       <br />
-                     D42 Red Fm Road Sector 2 Block D
+                      D42 Red Fm Road Sector 2 Block D
                       <br />
                       Noida, Uttar Pradesh 201301
                       <br />
-                      Telephone:<a href="tel:+91">+ 91 81302-45100</a>
+                      Telephone:<a href="tel:+918905054141">+ 918905054141</a>
                       <br />
-                      E-mail:
-                      <a href="mailto:support@maxifysolution.com">
-                        support@maxifysolution.com
-                      </a>
-                      <a href="mailto:mail@companyname.com">
-                        <br />
-                      </a>
+                      E-mail: <a href="mailto:support@maxifysolution.com">support@maxifysolution.com</a>
                     </li>
                   </ul>
                 </div>
@@ -295,13 +289,13 @@ const Footer = () => {
                     <span>
                       <PiMapPinThin />
                     </span>
-                    F02, D42 Red Fm Road Sector 2 Block D, Noida, Uttar Pradesh 201301
+                  F02,  D42 Red Fm Road Sector 2 Block D Noida, Uttar Pradesh 201301
                   </li>
                   <li>
                     <span>
                       <FiPhoneCall />
                     </span>
-                    <a href="tel:+918130245100">+ 91 81302-45100</a>
+                    <a href="tel:+918905054141">+ 91 8905054141</a>
                   </li>
                   <li>
                     <span>

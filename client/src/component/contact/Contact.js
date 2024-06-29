@@ -41,7 +41,7 @@ const Contact = () => {
     }
 
     try {
-      const data = await axios.post("http://localhost:3000/contact", formData);
+      const data = await axios.post("http://localhost:500/contact", formData);
       console.log("Form submitted:", data);
     } catch (error) {}
   };

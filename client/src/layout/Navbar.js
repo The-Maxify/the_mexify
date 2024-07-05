@@ -69,7 +69,6 @@ const Navbar = () => {
   return (
     <>
       <header className={x.join(" ")}>
-        
         <div className={`navbar-main-box lg:hover:bg-[#3d3b40] ${click ? "sm:bg-[#3d3b40]" : ""}`}>
           <Bounce duration={1000}>
             <div className="logo" onClick={() => navigate("/")}>

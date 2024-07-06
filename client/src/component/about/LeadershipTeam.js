@@ -57,7 +57,7 @@ const LeadershipTeam = () => {
         </div>
       </div>
 
-      <div className="container-section-2 mat-0 sm:mt-20">
+      {/* <div className="container-section-2 mat-0 sm:mt-20">
         <Fade direction="down"><h4 className="text-heading-h4 left-line sm:mt-10 lg:mt-0">Management Team</h4></Fade>
         <div className="flex flex-wrap gap-4 justify-center mat-50">
           <div className="w-[400px]">
@@ -99,7 +99,7 @@ const LeadershipTeam = () => {
         
         
         </div>
-      </div>
+      </div> */}
       {/* <div className="container-section-2 mat-100">
         <Fade direction="down"><h4 className="text-heading-h4 left-line">Developer Team</h4></Fade>
         <div className="grid grid-cols-12  gap-4 mat-50">

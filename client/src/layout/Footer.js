@@ -349,7 +349,7 @@ const Footer = () => {
             <div>
               <Link>Terms & Conditions</Link>
               <span className="mx-2"> |</span>
-              <Link> Privacy Policy</Link>
+              <Link to="privacy-policy"> Privacy Policy</Link>
             </div>
           </div>
         </div>

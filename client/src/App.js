@@ -22,6 +22,7 @@ import SuccessStoriesDetails from './component/successstories/SuccessStoriesDeta
 import Career from './component/career/Career';
 import WhatsAppButton from './component/WhatsAppButton';
 import ThankYouPage from './component/Thankyou';
+import Privacypolicy from './component/Privacypolicy';
 function App() {
   return (
     <>
@@ -116,6 +117,7 @@ function App() {
         <Route path='/leadership-team/' element={<LeadershipTeam />} />
         <Route path='/contact-us/' element={<Contact />} />
         <Route path='/career/' element={<Career />} />
+        <Route path='/privacy-policy/' element={<Privacypolicy />} />
       </Routes>
       <Footer />
       <WhatsAppButton/>
